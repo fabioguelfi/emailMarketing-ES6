@@ -1,57 +1,137 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>            
-html, body, div, span, applet, object, iframe,
-blockquote, pre, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b,i, center,
-dl, dt, dd, ol,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-        .tamanhoMobile{
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        blockquote,
+        pre,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tamanhoMobile {
             position: absolute;
             width: 480px;
             height: 900px;
         }
-        .header{
+
+        .header {
             border: black dashed 1px;
             width: 400px;
             height: 200px;
@@ -62,7 +142,8 @@ table {
             text-align: center;
             margin-bottom: 1vh;
         }
-        .features{
+
+        .features {
             border: black dashed 1px;
             width: 400px;
             height: 200px;
@@ -73,52 +154,72 @@ table {
             text-align: left;
             margin-bottom: 1vh;
         }
-        </style>
-    </head>
-    <body>
+    </style>
+</head>
 
-        <div class="tamanhoMobile">
-            <div class="header">
-                <h1><span id="rendertitulo"></span></h1>
-                <h5><span id="renderIntro"></span></h5>
-                <p> <span id="renderParagrafo"></span></p>
-            </div>
-            <div class="features">
-                <span id="renderFeatures"></span>
-            </div>
+<body>
+
+    <div class="tamanhoMobile">
+        <div class="header">
+            <h1>
+                <span id="rendertitulo"></span>
+            </h1>
+            <h5>
+                <span id="renderIntro"></span>
+            </h5>
+            <p>
+                <span id="renderParagrafo"></span>
+            </p>
         </div>
+        <div class="features">
+            <span id="renderFeatures"></span>
+        </div>
+    </div>
 
-    </body>
-    <script>
-        /* --- header ---*/
-        const lacunaHeader = {
+</body>
+<script>
+    /* --- header ---*/
+    const lacunaHeader = {
         titulo: 'Notas de Versão',
         intro: 'Uma breve explicação de como se utilizar email responsivo',
         paragrafo: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit',
-        };
-        const {titulo, intro , paragrafo} = lacunaHeader
+    };
+    const { titulo, intro, paragrafo } = lacunaHeader
 
-        /* --- features ---*/
-        const lacunaFeatures = {
-            features: ['es6', 'js', 'template-literal']
-        }
-        const features = `
+    /* --- features ---*/
+    const lacunaFeatures = {
+        features: [{
+            site: 'SGRentals',
+            tipo: 'Erro',
+            descricao: 'Ajustes no desconto de comissionamento'
+        }],
+        features1: [{
+            site: 'Hertz-Int',
+            tipo: 'Erro',
+            descricao: 'Correção de incentivos enviados incorretamente pelo usuário'
+        }],
+
+    }
+    const features = `
             <ul>
-                ${lacunaFeatures.features.map((features) => `<li>${features}</li>`).join('')}
+                ${lacunaFeatures.features
+                                .map((obj) => `<li>${JSON.stringify(obj.site)},${JSON.stringify(obj.tipo)},${JSON.stringify(obj.descricao)}</li>`)
+                                .join('')}
             </ul>`
 
-        /* --- footer --- */
-        
-        /* --- render components --- */
+    /* --- footer --- */
 
-        /* render header inf */        
-        document.getElementById("rendertitulo").innerHTML = titulo
-        document.getElementById("renderIntro").innerHTML = intro
-        document.getElementById("renderParagrafo").innerHTML = paragrafo
-        
-        /* render features inf */
-        document.getElementById("renderFeatures").innerHTML = features
+    /* --- render components --- */
+
+    /* render header inf */
+    document.getElementById("rendertitulo").innerHTML = titulo
+    document.getElementById("renderIntro").innerHTML = intro
+    document.getElementById("renderParagrafo").innerHTML = paragrafo
+
+    /* render features inf */
+    document.getElementById("renderFeatures").innerHTML = features
         /* render footer ind */
 
-    </script>
+</script>
+
 </html>
